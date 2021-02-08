@@ -44,7 +44,7 @@ class Contact extends React.Component{
             message:this.state.message
          }
 
-         axios.post('/api/form',data)
+         axios.post('https://bizland-node.herokuapp.com/api/form',data)
          .then(res=>{
              this.setState({sent:true},this.resetForm())
          })
