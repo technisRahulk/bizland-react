@@ -44,7 +44,7 @@ class Contact extends React.Component{
             message:this.state.message
          }
 
-         axios.post('https://contact-serverless-7ayx4ktv1.vercel.app/api/form',data)
+         axios.post('/api/form',data)
          .then(res=>{
              this.setState({sent:true},this.resetForm())
          })
